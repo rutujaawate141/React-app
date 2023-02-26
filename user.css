@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    font-style:none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 1%;
+    background-color:rgb(141, 74, 241);
+    font-size: 20px;
+
+  }
+  .logo-text a,
+  .btn {
+    font-family:cursive;
+    font-size: 25px;
+    font-weight: 500;
+    color: #8ca3a3;
+  }
+  .btn {
+    color: #FFFFFF;
+    background-color: hsl(325, 79%, 70%);
+    border-color: aliceblue;
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+    box-shadow: 10px 18px 41px -8px hsla(293, 73%, 83%, 0.75);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   transition: 0.4s;
+  }
+  .back{
+    background-color: hsl(119, 72%, 76%);
+  }
+  .cards {
+    display: table;
+
+  }
+  .card {
+    font-family:monospace;
+    width: 400px;
+   overflow: hidden;
+    background: hwb(0 41% 5%);
+    display: inline-block;
+    flex-direction: row;
+    border-radius: 20px;
+    margin: 2rem;
+  }
+  .card-image img {
+    width: 0;
+    height: 100px;
+
+  }
+  .profile-image img {
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin-top: -85px;
+    display: block;
+    border-radius: 100px;
+  }
+  .card-content h3,
+  .card-content h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: hsl(207, 22%, 90%);
+  }
+
+.card:hover{
+  transition: 1s;
+  background-color: hwb(291 8% 41%);
+  transform:scale(1.1);
+}
